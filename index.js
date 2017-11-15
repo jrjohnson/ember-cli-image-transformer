@@ -48,10 +48,8 @@ module.exports = {
       }
       const icons = new GenerateIcons(imageNode, options);
 
-      return new Funnel(icons, {
-        destDir: 'assets/icons'
-      });
-
+      const destDir = ('destination' in obj) ? obj.destination : 'assets/icons';
+      return new Funnel(icons, { destDir });
     });
 
     if (publicTree) {
