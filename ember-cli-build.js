@@ -5,7 +5,30 @@ const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
   let app = new EmberAddon(defaults, {
-    // Add options here
+    'ember-cli-image-transformer': {
+      images: [
+        {
+          inputFilename: 'tests/dummy/public/square.svg',
+          outputFileName: 'icon-square',
+          convertTo: 'png',
+          sizes: [16, 32, 45, 900],
+        },
+        {
+          inputFilename: 'tests/dummy/public/circle.svg',
+          outputFileName: 'transparent-circle',
+          convertTo: 'png',
+          background: {r: 255, g: 255, b: 255, alpha: 0},
+          sizes: [100],
+        },
+        {
+          inputFilename: 'tests/dummy/public/circle.svg',
+          outputFileName: 'circle-with-green-background',
+          convertTo: 'png',
+          background: {r: 0, g: 255, b: 0, alpha: 0},
+          sizes: [100],
+        }
+      ]
+    }
   });
 
   /*
