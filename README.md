@@ -56,13 +56,14 @@ All generated images will be placed into the `public/assets` path of your applic
 
 ### Image Options
 
-| Key | Required | Example | Description |
-|-----|----------|---------|-------------|
-|`inputFileName`| :heavy_check_mark: | `public/circle.svg` | Where (relative to the application root) to find the input image |
-|`outputFileName`| :heavy_check_mark: | `transparent-circle` | This is combined with the `convertTo` and `size` to create the output file eg `transparent-circle92.png` |
-|`convertTo`| :heavy_check_mark: | `png` | The output file type |
-|`sizes`| :heavy_check_mark: | `[92, 150]` | An array of image sizes to produce |
-|`background`|  | `{r: 255, g: 255, b: 255, alpha: 0}` | Add a background color to the image. |
+| Key | Required | Default Value | Example | Description |
+|-----|----------|---------------|---------|-------------|
+|`inputFileName`| :heavy_check_mark: | none | `public/circle.svg` | Where (relative to the application root) to find the input image |
+|`outputFileName`| :heavy_check_mark: | none |  `transparent-circle` | This is combined with the `convertTo` and `size` to create the output file eg `transparent-circle92.png` |
+|`convertTo`| :heavy_check_mark: | none |  `png` | The output file type |
+|`sizes`| :heavy_check_mark: | none |  `[92, 150]` | An array of image sizes to produce |
+|`destination`| | `assets/icons` |  `images/wherever/you/want` | The destination directory for the output images relative to `/public` |
+|`background`|  | none |  `{r: 255, g: 255, b: 255, alpha: 0}` | Add a background color to the image. |
 
 
 ### Developing this addon

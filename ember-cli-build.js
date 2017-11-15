@@ -26,7 +26,14 @@ module.exports = function(defaults) {
           convertTo: 'jpg',
           background: {r: 0, g: 255, b: 0, alpha: 0},
           sizes: [100],
-        }
+        },
+        {
+          inputFilename: 'tests/dummy/public/square.svg',
+          outputFileName: 'bigsquare',
+          convertTo: 'png',
+          destination: 'big/images',
+          sizes: [200],
+        },
       ]
     }
   });
