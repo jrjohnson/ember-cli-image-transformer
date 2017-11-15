@@ -23,7 +23,7 @@ module.exports = function(defaults) {
         {
           inputFilename: 'tests/dummy/public/circle.svg',
           outputFileName: 'circle-with-green-background',
-          convertTo: 'png',
+          convertTo: 'jpg',
           background: {r: 0, g: 255, b: 0, alpha: 0},
           sizes: [100],
         }

@@ -41,6 +41,7 @@ module.exports = {
         inputFilename: pathData.base,
         outputFileName: obj.outputFileName,
         project: this.app.project,
+        convertTo: obj.convertTo
       };
       if ('background' in obj) {
         options.background = obj.background;
