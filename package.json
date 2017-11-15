@@ -1,17 +1,20 @@
 {
   "name": "ember-cli-image-transformer",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Transform Images for your Ember Application",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "image",
+    "icon",
+    "sharp"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Jonathan Johnson (jon.johnson@ucsf.edu)",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/jrjohnson/ember-cli-image-transformer",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
