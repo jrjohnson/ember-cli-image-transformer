@@ -4,14 +4,11 @@
 [![Ember Observer Score](https://emberobserver.com/badges/ember-cli-image-transformer.svg)](https://emberobserver.com/addons/ember-cli-image-transformer)
 [![Greenkeeper badge](https://badges.greenkeeper.io/jrjohnson/ember-cli-image-transformer.svg)](https://greenkeeper.io/)
 
-## Transform Images for your Ember Application
+## Transform Images for your Ember Application from One Source Image
 
-I hate having to create a bunch of identical images to use as favicon and
-icon images for my application.  This addon was created to take a single image and
-transform it into many images of differing sizes, types, and backgrounds.
+I hate having to create a bunch of identical images for use as icons and favicon images for my application, so I created this addon to take a single source image and transform it into many images of differing sizes, types, and backgrounds.
 
-It takes advantage of the awesome [Sharp](https://github.com/lovell/sharp) library to 
-do the heavy lifting.
+It is built using EmberJS and takes advantage of the awesome [Sharp](https://github.com/lovell/sharp) library to do the heavy lifting.
 
 ## Installation
 
@@ -69,11 +66,10 @@ All generated images will be placed into the `public/assets` path of your applic
 |`destination`| | `assets/icons` |  `images/wherever/you/want` | The destination directory for the output images relative to `/public` |
 |`background`|  | none |  `{r: 255, g: 255, b: 255, alpha: 0}` | Add a background color to the image. |
 
-
 ### Developing this addon
 #### Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/jrjohnson/ember-cli-image-transformer.git`
 * `cd ember-cli-image-transformer`
 * `yarn install`
 
