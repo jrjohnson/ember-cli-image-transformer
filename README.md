@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/jrjohnson/ember-cli-image-transformer.svg?branch=master)](https://travis-ci.org/jrjohnson/ember-cli-image-transformer)
 [![Ember Observer Score](https://emberobserver.com/badges/ember-cli-image-transformer.svg)](https://emberobserver.com/addons/ember-cli-image-transformer)
+[![Greenkeeper badge](https://badges.greenkeeper.io/jrjohnson/ember-cli-image-transformer.svg)](https://greenkeeper.io/)
 
 ## Transform Images for your Ember Application
 
