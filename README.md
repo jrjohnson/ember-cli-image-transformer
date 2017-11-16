@@ -1,5 +1,8 @@
 # ember-cli-image-transformer
 
+[![Build Status](https://travis-ci.org/jrjohnson/ember-cli-image-transformer.svg?branch=master)](https://travis-ci.org/jrjohnson/ember-cli-image-transformer)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-cli-image-transformer.svg)](https://emberobserver.com/addons/ember-cli-image-transformer)
+
 ## Transform Images for your Ember Application
 
 I hate having to create a bunch of identical images to use as favicon and
