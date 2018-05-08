@@ -10,13 +10,16 @@ I hate having to create a bunch of identical images for use as icons and favicon
 
 It is built using EmberJS and takes advantage of the awesome [Sharp](https://github.com/lovell/sharp) library to do the heavy lifting.
 
-## Installation
+Installation
+------------------------------------------------------------------------------
 
 ```bash
 ember install ember-cli-image-transformer
 ```
 
-## Usage
+
+Usage
+------------------------------------------------------------------------------
 
 Create an `ember-cli-image-transformer` section in your `ember-cli-build.js` file with 
 an `images` array. Each element in the array represents a different set of images to 
@@ -66,26 +69,34 @@ All generated images will be placed into the `public/assets` path of your applic
 |`destination`| | `assets/icons` |  `images/wherever/you/want` | The destination directory for the output images relative to `/public` |
 |`background`|  | none |  `{r: 255, g: 255, b: 255, alpha: 0}` | Add a background color to the image. |
 
-### Developing this addon
-#### Installation
+Contributing
+------------------------------------------------------------------------------
+
+### Installation
 
 * `git clone https://github.com/jrjohnson/ember-cli-image-transformer.git`
 * `cd ember-cli-image-transformer`
 * `yarn install`
 
-#### Running
+### Linting
+
+* `yarn lint:js`
+* `yarn lint:js --fix`
+
+### Running tests
+
+* `ember test` – Runs the test suite on the current Ember version
+* `ember test --server` – Runs the test suite in "watch mode"
+* `ember try:each` – Runs the test suite against multiple Ember versions
+
+### Running the dummy application
 
 * `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-#### Running Tests
-
-* `yarn test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-#### Building
-
-* `ember build`
+* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+
+License
+------------------------------------------------------------------------------
+
+This project is licensed under the [MIT License](LICENSE.md).
