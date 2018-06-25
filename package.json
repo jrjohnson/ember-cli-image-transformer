@@ -60,5 +60,15 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  }
+  },
+  "files": [
+    "index.js",
+    "ember-cli-build.js",
+    "addon/",
+    "app/",
+    "blueprints/",
+    "config/",
+    "lib/",
+    "vendor/"
+  ]
 }
