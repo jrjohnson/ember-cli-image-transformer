@@ -28,7 +28,7 @@
     "broccoli-merge-trees": "^3.0.0",
     "ember-cli-babel": "^6.6.0",
     "rsvp": "^4.7.0",
-    "sharp": "^0.20.0"
+    "sharp": "^0.20.8"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.7.0",
