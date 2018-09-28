@@ -7,7 +7,7 @@ const MergeTrees = require('broccoli-merge-trees');
 const assert = require('assert');
 
 module.exports = {
-  name: 'ember-cli-image-transformer',
+  name: require('./package').name,
   imageTransformerConfig: null,
   app: null,
   included(app) {
