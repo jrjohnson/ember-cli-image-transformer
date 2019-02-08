@@ -10,6 +10,14 @@ I hate having to create a bunch of identical images for use as icons and favicon
 
 It is built using EmberJS and takes advantage of the awesome [Sharp](https://github.com/lovell/sharp) library to do the heavy lifting.
 
+
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
+
+
 Installation
 ------------------------------------------------------------------------------
 
@@ -68,34 +76,6 @@ All generated images will be placed into the `public/assets` path of your applic
 |`sizes`| :heavy_check_mark: | none |  `[92, 150]` | An array of image sizes to produce |
 |`destination`| | `assets/icons` |  `images/wherever/you/want` | The destination directory for the output images relative to `/public` |
 |`background`|  | none |  `{r: 255, g: 255, b: 255, alpha: 0}` | Add a background color to the image. |
-
-Contributing
-------------------------------------------------------------------------------
-
-### Installation
-
-* `git clone https://github.com/jrjohnson/ember-cli-image-transformer.git`
-* `cd ember-cli-image-transformer`
-* `yarn install`
-
-### Linting
-
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Running tests
-
-* `ember test` – Runs the test suite on the current Ember version
-* `ember test --server` – Runs the test suite in "watch mode"
-* `ember try:each` – Runs the test suite against multiple Ember versions
-
-### Running the dummy application
-
-* `ember serve`
-* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
 License
 ------------------------------------------------------------------------------
