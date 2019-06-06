@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-image-transformer",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "Transform Images for your Ember Application",
   "keywords": [
     "ember-addon",
