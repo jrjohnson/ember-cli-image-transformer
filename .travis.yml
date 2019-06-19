@@ -51,5 +51,14 @@ jobs:
     - env: EMBER_TRY_SCENARIO=ember-canary
     - env: EMBER_TRY_SCENARIO=ember-default-with-jquery
 
+    - stage: deploy
+      script: skip
+      deploy:
+        provider: npm
+        email: jon.johnson@ucsf.edu
+        api_key: $NPM_TOKEN
+        on:
+          tags: true
+
 script:
   - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO
