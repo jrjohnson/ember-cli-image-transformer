@@ -29,6 +29,20 @@ jobs:
     - name: test
       run: npm test
 
+  test-floating:
+    name: Floating Dependencies
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 8
+    - name: install dependencies
+      run: npm install --no-package-lock
+    - name: test
+      run: npm test
+
   try-scenarios:
     name: ember-try
 
@@ -37,15 +51,15 @@ jobs:
     needs: test
 
     strategy:
-      fail-fast: true
       matrix:
         ember-try-scenario:
-         - ember-lts-3.4
          - ember-lts-3.8
+         - ember-lts-3.12
          - ember-release
          - ember-beta
          - ember-canary
          - ember-default-with-jquery
+         - ember-classic
 
     steps:
     - uses: actions/checkout@v1
