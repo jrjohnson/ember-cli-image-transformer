@@ -19,7 +19,7 @@ jobs:
     - uses: actions/checkout@v1
     - uses: actions/setup-node@v1
       with:
-        node-version: 8
+        node-version: 10
     - name: install dependencies
       run: npm ci
     - name: lint js
@@ -37,7 +37,7 @@ jobs:
     - uses: actions/checkout@v1
     - uses: actions/setup-node@v1
       with:
-        node-version: 8
+        node-version: 10
     - name: install dependencies
       run: npm install --no-package-lock
     - name: test
@@ -53,8 +53,8 @@ jobs:
     strategy:
       matrix:
         ember-try-scenario:
-         - ember-lts-3.8
          - ember-lts-3.12
+         - ember-lts-3.16
          - ember-release
          - ember-beta
          - ember-canary

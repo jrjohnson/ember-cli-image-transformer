@@ -13,9 +13,9 @@ It is built using EmberJS and takes advantage of the awesome [Sharp](https://git
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v3.8 or above
+* Ember.js v3.12 or above
 * Ember CLI v2.13 or above
-* Node.js v8 or above
+* Node.js v10 or above
 
 
 Installation
