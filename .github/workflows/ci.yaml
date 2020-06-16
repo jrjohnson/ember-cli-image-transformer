@@ -27,7 +27,7 @@ jobs:
     - name: lint hbs
       run: npm run lint:hbs
     - name: test
-      run: npm test
+      run: npm run test:ember
 
   test-floating:
     name: Floating Dependencies
@@ -41,7 +41,7 @@ jobs:
     - name: install dependencies
       run: npm install --no-package-lock
     - name: test
-      run: npm test
+      run: npm run test:ember
 
   try-scenarios:
     name: ember-try
