@@ -1,0 +1,105 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: broccoli-asset-rev
+    versions:
+    - ">= 0"
+  - dependency-name: ember-cli-babel
+    versions:
+    - ">= 0"
+  - dependency-name: ember-cli-dependency-checker
+    versions:
+    - ">= 0"
+  - dependency-name: ember-cli-eslint
+    versions:
+    - ">= 0"
+  - dependency-name: ember-cli-htmlbars
+    versions:
+    - ">= 0"
+  - dependency-name: ember-cli-htmlbars-inline-precompile
+    versions:
+    - ">= 0"
+  - dependency-name: ember-cli-inject-live-reload
+    versions:
+    - ">= 0"
+  - dependency-name: ember-cli-sri
+    versions:
+    - ">= 0"
+  - dependency-name: ember-cli-template-lint
+    versions:
+    - ">= 0"
+  - dependency-name: ember-cli-uglify
+    versions:
+    - ">= 0"
+  - dependency-name: ember-disable-prototype-extensions
+    versions:
+    - ">= 0"
+  - dependency-name: ember-export-application-global
+    versions:
+    - ">= 0"
+  - dependency-name: "@ember/jquery"
+    versions:
+    - ">= 0"
+  - dependency-name: ember-load-initializers
+    versions:
+    - ">= 0"
+  - dependency-name: ember-maybe-import-regenerator
+    versions:
+    - ">= 0"
+  - dependency-name: "@ember/optional-features"
+    versions:
+    - ">= 0"
+  - dependency-name: ember-qunit
+    versions:
+    - ">= 0"
+  - dependency-name: ember-resolver
+    versions:
+    - ">= 0"
+  - dependency-name: ember-source
+    versions:
+    - ">= 0"
+  - dependency-name: ember-source-channel-url
+    versions:
+    - ">= 0"
+  - dependency-name: ember-try
+    versions:
+    - ">= 0"
+  - dependency-name: eslint-plugin-ember
+    versions:
+    - ">= 0"
+  - dependency-name: eslint-plugin-node
+    versions:
+    - ">= 0"
+  - dependency-name: loader.js
+    versions:
+    - ">= 0"
+  - dependency-name: qunit-dom
+    versions:
+    - ">= 0"
+  - dependency-name: ember-cli
+    versions:
+    - 3.24.0
+    - 3.25.0
+    - 3.25.1
+    - 3.25.2
+    - 3.25.3
+    - 3.26.0
+  - dependency-name: eslint
+    versions:
+    - 7.19.0
+    - 7.24.0
+  - dependency-name: ember-template-lint
+    versions:
+    - 2.18.0
+    - 2.18.1
+    - 3.1.1
+    - 3.2.0
+  - dependency-name: elliptic
+    versions:
+    - 6.5.4
