@@ -18,13 +18,16 @@ module.exports = {
     }
     this.app = app;
 
-    var addonOptions = (this.parent && this.parent.options) || (this.app && this.app.options) || {};
+    var addonOptions =
+      (this.parent && this.parent.options) ||
+      (this.app && this.app.options) ||
+      {};
     this.imageTransformerConfig = addonOptions[this.name] || {
-      images: []
+      images: [],
     };
   },
   treeForPublic(publicTree) {
-    let trees = this.imageTransformerConfig.images.map(obj => {
+    let trees = this.imageTransformerConfig.images.map((obj) => {
       this.checkProperty('inputFilename', obj);
       this.checkProperty('outputFileName', obj);
       this.checkProperty('convertTo', obj);
@@ -33,21 +36,21 @@ module.exports = {
 
       const pathData = path.parse(inputPath);
       const imageNode = new Funnel(pathData.dir, {
-        include: [pathData.base]
+        include: [pathData.base],
       });
       let options = {
         sizes: obj.sizes,
         inputFilename: pathData.base,
         outputFileName: obj.outputFileName,
         project: this.app.project,
-        convertTo: obj.convertTo
+        convertTo: obj.convertTo,
       };
       if ('background' in obj) {
         options.background = obj.background;
       }
       const icons = new GenerateIcons(imageNode, options);
 
-      const destDir = ('destination' in obj) ? obj.destination : 'assets/icons';
+      const destDir = 'destination' in obj ? obj.destination : 'assets/icons';
       return new Funnel(icons, { destDir });
     });
 
@@ -58,6 +61,9 @@ module.exports = {
     return new MergeTrees(trees);
   },
   checkProperty(property, obj) {
-    assert.ok(property in obj, `\n${this.name} error: ${property} missing from image definition\n`);
-  }
+    assert.ok(
+      property in obj,
+      `\n${this.name} error: ${property} missing from image definition\n`
+    );
+  },
 };
