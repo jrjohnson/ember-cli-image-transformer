@@ -15,11 +15,15 @@ jobs:
     name: Tests
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
-        node-version: 10
+        node-version: ${{ matrix.node-version }}
     - name: install dependencies
       run: npm ci
     - name: lint js
@@ -34,10 +38,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
-        node-version: 10
+        node-version: 12
     - name: install dependencies
       run: npm install --no-package-lock
     - name: test
@@ -45,24 +49,22 @@ jobs:
 
   try-scenarios:
     name: ember-try
-
     runs-on: ubuntu-latest
-
     needs: test
-
     strategy:
       matrix:
         ember-try-scenario:
-         - ember-lts-3.16
-         - ember-lts-3.20
-         - ember-release
-         - ember-beta
-         - ember-canary
-         - ember-default-with-jquery
-         - ember-classic
-
+        - ember-lts-3.16
+        - ember-lts-3.20
+        - ember-release
+        - ember-beta
+        - ember-canary
+        - ember-default-with-jquery
+        - ember-classic
+        - embroider-safe
+        - embroider-optimized
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
         node-version: 12
