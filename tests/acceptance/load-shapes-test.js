@@ -2,7 +2,7 @@ import { currentURL, visit, findAll } from '@ember/test-helpers';
 import { module, test } from 'qunit';
 import { setupApplicationTest } from 'ember-qunit';
 
-module('Acceptance | Load Shapes', function(hooks) {
+module('Acceptance | Load Shapes', function (hooks) {
   setupApplicationTest(hooks);
 
   function testLoad(assert, selector) {
@@ -14,7 +14,7 @@ module('Acceptance | Load Shapes', function(hooks) {
 
     const reloadedImage = new Image();
     reloadedImage.addEventListener('error', () => {
-      const filename = img.src.replace(/^.*[\\/]/, '')
+      const filename = img.src.replace(/^.*[\\/]/, '');
       assert.ok(false, `${filename} image didn't load`);
       reloadedImage.remove();
       done();
@@ -23,10 +23,10 @@ module('Acceptance | Load Shapes', function(hooks) {
       assert.ok(true);
       done();
     });
-    reloadedImage.src =img.src;
+    reloadedImage.src = img.src;
   }
 
-  test('circle with green background', async function(assert) {
+  test('circle with green background', async function (assert) {
     assert.expect(3);
     assert.timeout(1000);
     await visit('/');
@@ -34,7 +34,7 @@ module('Acceptance | Load Shapes', function(hooks) {
     testLoad(assert, '.circle-with-green-background img');
   });
 
-  test('sized squares', async function(assert) {
+  test('sized squares', async function (assert) {
     assert.expect(12);
     assert.timeout(1000);
     await visit('/');
@@ -45,7 +45,7 @@ module('Acceptance | Load Shapes', function(hooks) {
     testLoad(assert, '.squares img:nth-of-type(4)');
   });
 
-  test('transparent circle', async function(assert) {
+  test('transparent circle', async function (assert) {
     assert.expect(3);
     assert.timeout(1000);
     await visit('/');
@@ -53,7 +53,7 @@ module('Acceptance | Load Shapes', function(hooks) {
     testLoad(assert, '.transparent-circle img');
   });
 
-  test('different destination square', async function(assert) {
+  test('different destination square', async function (assert) {
     assert.expect(3);
     assert.timeout(1000);
     await visit('/');
