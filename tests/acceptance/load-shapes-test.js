@@ -1,6 +1,7 @@
 import { currentURL, visit, findAll } from '@ember/test-helpers';
 import { module, test } from 'qunit';
 import { setupApplicationTest } from 'ember-qunit';
+import percySnapshot from '@percy/ember';
 
 module('Acceptance | Load Shapes', function (hooks) {
   setupApplicationTest(hooks);
@@ -25,6 +26,12 @@ module('Acceptance | Load Shapes', function (hooks) {
     });
     reloadedImage.src = img.src;
   }
+
+  test('percy visual test', async function (assert) {
+    await visit('/');
+    assert.dom('img').exists({ count: 9 });
+    await percySnapshot('Shapes Loaded');
+  });
 
   test('circle with green background', async function (assert) {
     assert.expect(3);
