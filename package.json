@@ -50,7 +50,7 @@
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
     "@percy/cli": "^1.0.0-beta.70",
-    "@percy/ember": "^3.0.0",
+    "@percy/ember": "^4.2.0",
     "broccoli-asset-rev": "^3.0.0",
     "concurrently": "^8.0.1",
     "ember-auto-import": "^2.6.3",
