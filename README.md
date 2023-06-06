@@ -10,24 +10,21 @@ I hate having to create a bunch of identical images for use as icons and favicon
 It is built using EmberJS and takes advantage of the awesome [Sharp](https://github.com/lovell/sharp) library to do the heavy lifting.
 
 
-Compatibility
-------------------------------------------------------------------------------
+## Compatibility
 
-* Ember.js v3.20 or above
-* Ember CLI v3.20 or above
-* Node.js v12 or above
+* Ember.js v4.4 or above
+* Ember CLI v4.4 or above
+* Node.js v14 or above
 
 
-Installation
-------------------------------------------------------------------------------
+## Installation
 
 ```bash
 ember install ember-cli-image-transformer
 ```
 
 
-Usage
-------------------------------------------------------------------------------
+## Usage
 
 Create an `ember-cli-image-transformer` section in your `ember-cli-build.js` file with 
 an `images` array. Each element in the array represents a different set of images to 
@@ -77,13 +74,11 @@ All generated images will be placed into the `public/assets` path of your applic
 |`destination`| | `assets/icons` |  `images/wherever/you/want` | The destination directory for the output images relative to `/public` |
 |`background`|  | none |  `{r: 255, g: 255, b: 255, alpha: 0}` | Add a background color to the image. |
 
-Contributing
-------------------------------------------------------------------------------
+## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
 
 
-License
-------------------------------------------------------------------------------
+## License
 
 This project is licensed under the [MIT License](LICENSE.md).
