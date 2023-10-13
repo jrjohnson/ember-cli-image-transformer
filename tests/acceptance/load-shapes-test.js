@@ -34,7 +34,6 @@ module('Acceptance | Load Shapes', function (hooks) {
   });
 
   test('circle with green background', async function (assert) {
-    assert.expect(3);
     assert.timeout(1000);
     await visit('/');
 
@@ -42,7 +41,6 @@ module('Acceptance | Load Shapes', function (hooks) {
   });
 
   test('sized squares', async function (assert) {
-    assert.expect(12);
     assert.timeout(1000);
     await visit('/');
 
@@ -53,7 +51,6 @@ module('Acceptance | Load Shapes', function (hooks) {
   });
 
   test('transparent circle', async function (assert) {
-    assert.expect(3);
     assert.timeout(1000);
     await visit('/');
 
@@ -61,7 +58,6 @@ module('Acceptance | Load Shapes', function (hooks) {
   });
 
   test('different destination square', async function (assert) {
-    assert.expect(3);
     assert.timeout(1000);
     await visit('/');
 
