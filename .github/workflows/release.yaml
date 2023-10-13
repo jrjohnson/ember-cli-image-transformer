@@ -9,13 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 16
+          cache: pnpm
           registry-url: https://registry.npmjs.org/
-      - name: install dependencies
-        run: npm ci --ignore-scripts
+      - run: pnpm install --ignore-scripts
       - name: publish
-        run: npm publish
+        run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}

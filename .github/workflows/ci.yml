@@ -19,19 +19,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Install Node
-        uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: npm
-      - name: Install Dependencies
-        run: npm ci
+          cache: pnpm
+      - run: pnpm install
       - name: Lint
-        run: npm run lint
+        run: pnpm run lint
       - name: Run Tests
-        run: npm run test:ember
+        run: pnpm run test:ember
       - name: percy
-        run: npm run test:percy
+        run: pnpm run test:percy
         env:
           PERCY_TOKEN: ${{secrets.PERCY_TOKEN}}
 
@@ -42,14 +41,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: npm
-      - name: Install Dependencies
-        run: npm install --no-shrinkwrap
+          cache: pnpm
+      - run: pnpm install --no-lockfile
       - name: Run Tests
-        run: npm run test:ember
+        run: pnpm run test:ember
 
   try-scenarios:
     name: ${{ matrix.try-scenario }}
@@ -72,12 +71,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Install Node
-        uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: npm
-      - name: Install Dependencies
-        run: npm ci
+          cache: pnpm
+      - run: pnpm install
       - name: Run Tests
         run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }}

@@ -29,7 +29,8 @@
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\"",
     "test:ember": "ember test",
     "test:ember-compatibility": "ember try:each",
-    "test:percy": "percy exec -- ember test"
+    "test:percy": "percy exec -- ember test",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@babel/core": "^7.22.20",
@@ -87,7 +88,9 @@
     "ember-source": ">= 4.0.0"
   },
   "engines": {
-    "node": "16.* || >= 18"
+    "node": "16.* || >= 18",
+    "yarn": "use pnpm",
+    "npm": "use pnpm"
   },
   "ember": {
     "edition": "octane"
@@ -95,6 +98,7 @@
   "ember-addon": {
     "configPath": "tests/dummy/config"
   },
+  "packageManager": "pnpm@8.6.12",
   "files": [
     "index.js",
     "ember-cli-build.js",
