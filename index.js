@@ -63,7 +63,7 @@ module.exports = {
   checkProperty(property, obj) {
     assert.ok(
       property in obj,
-      `\n${this.name} error: ${property} missing from image definition\n`
+      `\n${this.name} error: ${property} missing from image definition\n`,
     );
   },
 };
