@@ -22,6 +22,14 @@ jobs:
         git config --global user.email "jon.johnson@ucsf.edu"
     - uses: pnpm/action-setup@v2
     - name: Increment Version
-      run: pnpm version ${{ github.event.inputs.releaseType }}
+      run: pnpm version --filter ember-cli-image-transformer ${{ github.event.inputs.releaseType }}
+    - run: |
+        NEW_TAG=`node -p "require('./packages/ember-cli-image-transformer/package.json').version"`
+        echo ${NEW_TAG}
+        echo "new_tag=${NEW_TAG}" >> $GITHUB_ENV
+    - name: Tag Version
+      run: |
+        git commit -a -m "${{env.new_tag}}"
+        git tag ${{env.new_tag}} -m "Tagging the ${{env.new_tag}} ${{ github.event.inputs.releaseType }} release"
     - name: Push Changes
       run: git push --follow-tags

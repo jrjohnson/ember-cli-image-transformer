@@ -1,0 +1,69 @@
+{
+  "name": "ember-cli-image-transformer",
+  "version": "7.0.0",
+  "description": "Transform Images for your Ember Application",
+  "keywords": [
+    "ember-addon",
+    "image",
+    "icon",
+    "sharp"
+  ],
+  "repository": "https://github.com/jrjohnson/ember-cli-image-transformer",
+  "license": "MIT",
+  "author": "Jonathan Johnson (jon.johnson@ucsf.edu)",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "lint": "concurrently \"pnpm:lint:*(!fix)\" --names \"lint:\"",
+    "lint:fix": "concurrently \"pnpm:lint:*:fix\" --names \"fix:\"",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "test": "concurrently \"pnpm:lint\" --names \"lint\""
+  },
+  "dependencies": {
+    "@babel/core": "^7.22.20",
+    "broccoli-caching-writer": "^3.0.3",
+    "broccoli-funnel": "^3.0.2",
+    "broccoli-merge-trees": "^4.1.0",
+    "ember-cli-babel": "^8.0.0",
+    "ember-cli-htmlbars": "^6.3.0",
+    "rsvp": "^4.7.0",
+    "sharp": "^0.32.1"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.22.15",
+    "@babel/plugin-proposal-decorators": "^7.22.15",
+    "@ember/optional-features": "^2.0.0",
+    "concurrently": "^8.2.1",
+    "ember-auto-import": "^2.6.3",
+    "ember-cli": "~5.3.0",
+    "ember-cli-clean-css": "^3.0.0",
+    "ember-cli-dependency-checker": "^3.3.2",
+    "ember-cli-inject-live-reload": "^2.1.0",
+    "ember-cli-sri": "^2.1.1",
+    "ember-cli-terser": "^4.0.2",
+    "ember-load-initializers": "^2.1.2",
+    "ember-resolver": "^11.0.1",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-ember": "^11.11.1",
+    "eslint-plugin-n": "^16.1.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-qunit": "^8.0.0",
+    "loader.js": "^4.7.0",
+    "prettier": "^3.0.3",
+    "webpack": "^5.88.2"
+  },
+  "engines": {
+    "node": "16.* || >= 18"
+  },
+  "ember": {
+    "edition": "octane"
+  },
+  "files": [
+    "index.js",
+    "addon/",
+    "lib/"
+  ]
+}

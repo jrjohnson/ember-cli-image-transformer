@@ -1,0 +1,4 @@
+packages:
+  - "ember-cli-image-transformer"
+  - "test-app"
+
