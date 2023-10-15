@@ -26,11 +26,11 @@ jobs:
           cache: pnpm
       - run: pnpm install
       - name: Lint
-        run: pnpm run lint
+        run: pnpm lint
       - name: Run Tests
-        run: pnpm run test:ember
+        run: pnpm --filter test-app run test:percy
       - name: percy
-        run: pnpm run test:percy
+        run: pnpm --filter test-app run test:percy
         env:
           PERCY_TOKEN: ${{secrets.PERCY_TOKEN}}
 
@@ -48,7 +48,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --no-lockfile
       - name: Run Tests
-        run: pnpm run test:ember
+        run: pnpm --filter test-app run test:ember
 
   try-scenarios:
     name: ${{ matrix.try-scenario }}
@@ -78,4 +78,4 @@ jobs:
           cache: pnpm
       - run: pnpm install
       - name: Run Tests
-        run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
+        run: pnpm --filter test-app exec ember try:one ${{ matrix.try-scenario }} --skip-cleanup

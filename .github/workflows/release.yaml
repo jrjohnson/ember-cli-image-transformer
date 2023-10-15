@@ -17,6 +17,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: pnpm install --ignore-scripts
       - name: publish
-        run: pnpm publish
+        run: pnpm --filter ember-cli-image-transformer publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
