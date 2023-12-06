@@ -22,7 +22,7 @@ jobs:
       - uses: pnpm/action-setup@v2
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
           cache: pnpm
       - run: pnpm install
       - name: Lint
@@ -44,7 +44,7 @@ jobs:
       - uses: pnpm/action-setup@v2
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
           cache: pnpm
       - run: pnpm install --no-lockfile
       - name: Run Tests
@@ -60,7 +60,6 @@ jobs:
       fail-fast: false
       matrix:
         try-scenario:
-          - ember-lts-4.4
           - ember-lts-4.8
           - ember-lts-4.12
           - ember-release
@@ -74,7 +73,7 @@ jobs:
       - uses: pnpm/action-setup@v2
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
           cache: pnpm
       - run: pnpm install
       - name: Run Tests
