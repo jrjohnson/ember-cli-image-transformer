@@ -40,7 +40,7 @@
     "ember-cli-babel": "^8.2.0",
     "ember-cli-htmlbars": "^6.3.0",
     "rsvp": "^4.7.0",
-    "sharp": "^0.32.1"
+    "sharp": "^0.33.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.15",
