@@ -16,7 +16,7 @@ dependencies:
     version: 3.0.2
   broccoli-merge-trees:
     specifier: ^4.1.0
-    version: 4.1.0
+    version: 4.2.0
   ember-cli-babel:
     specifier: ^8.2.0
     version: 8.2.0(@babel/core@7.23.2)
@@ -3501,16 +3501,6 @@ packages:
       - supports-color
     dev: true
 
-  /broccoli-merge-trees@4.1.0:
-    resolution: {integrity: sha512-1OXsksKPFiRdiZZOfh1z1mm7ZqKezlMS+DPBpHMDLSb6AhYHvoQfjf0KuMXbY8aoYskj7+Z+EJ5SsS/OC2v5yw==}
-    engines: {node: 10.* || >= 12.*}
-    dependencies:
-      broccoli-plugin: 3.1.0
-      merge-trees: 2.0.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
   /broccoli-merge-trees@4.2.0:
     resolution: {integrity: sha512-nTrQe5AQtCrW4enLRvbD/vTLHqyW2tz+vsLXQe4IEaUhepuMGVKJJr+I8n34Vu6fPjmPLwTjzNC8izMIDMtHPw==}
     engines: {node: 10.* || >= 12.*}
@@ -3519,7 +3509,6 @@ packages:
       merge-trees: 2.0.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /broccoli-middleware@2.1.1:
     resolution: {integrity: sha512-BK8aPhQpOLsHWiftrqXQr84XsvzUqeaN4PlCQOYg5yM0M+WKAHtX2WFXmicSQZOVgKDyh5aeoNTFkHjBAEBzwQ==}
@@ -3542,14 +3531,6 @@ packages:
   /broccoli-node-info@2.2.0:
     resolution: {integrity: sha512-VabSGRpKIzpmC+r+tJueCE5h8k6vON7EIMMWu6d/FyPdtijwLQ7QvzShEw+m3mHoDzUaj/kiZsDYrS8X2adsBg==}
     engines: {node: 8.* || >= 10.*}
-
-  /broccoli-output-wrapper@2.0.0:
-    resolution: {integrity: sha512-V/ozejo+snzNf75i/a6iTmp71k+rlvqjE3+jYfimuMwR1tjNNRdtfno+NGNQB2An9bIAeqZnKhMDurAznHAdtA==}
-    dependencies:
-      heimdalljs-logger: 0.1.10
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
 
   /broccoli-output-wrapper@3.2.5:
     resolution: {integrity: sha512-bQAtwjSrF4Nu0CK0JOy5OZqw9t5U0zzv2555EA/cF8/a8SLDTIetk9UgrtMVw7qKLKdSpOZ2liZNeZZDaKgayw==}
@@ -3595,7 +3576,7 @@ packages:
       mkdirp: 0.5.6
       promise-map-series: 0.2.3
       rimraf: 2.7.1
-      rsvp: 4.7.0
+      rsvp: 4.8.5
       symlink-or-copy: 1.3.1
       sync-disk-cache: 1.3.4
       walk-sync: 1.1.4
@@ -3647,21 +3628,6 @@ packages:
       rimraf: 2.7.1
       symlink-or-copy: 1.3.1
     dev: true
-
-  /broccoli-plugin@3.1.0:
-    resolution: {integrity: sha512-7w7FP8WJYjLvb0eaw27LO678TGGaom++49O1VYIuzjhXjK5kn2+AMlDm7CaUFw4F7CLGoVQeZ84d8gICMJa4lA==}
-    engines: {node: 8.* || 10.* || >= 12.*}
-    dependencies:
-      broccoli-node-api: 1.7.0
-      broccoli-output-wrapper: 2.0.0
-      fs-merger: 3.2.1
-      promise-map-series: 0.2.3
-      quick-temp: 0.1.8
-      rimraf: 2.7.1
-      symlink-or-copy: 1.3.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
 
   /broccoli-plugin@4.0.7:
     resolution: {integrity: sha512-a4zUsWtA1uns1K7p9rExYVYG99rdKeGRymW0qOCNkvDPHQxVi3yVyJHhQbM3EZwdt2E0mnhr5e0c/bPpJ7p3Wg==}
