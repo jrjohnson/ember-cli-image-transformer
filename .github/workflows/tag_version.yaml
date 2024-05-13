@@ -20,7 +20,7 @@ jobs:
       run: |
         git config --global user.name "Jonathan Johnson"
         git config --global user.email "jon.johnson@ucsf.edu"
-    - uses: pnpm/action-setup@v3
+    - uses: pnpm/action-setup@v4
     - name: Increment Version
       run: pnpm version ${{ github.event.inputs.releaseType }}
     - name: Push Changes
