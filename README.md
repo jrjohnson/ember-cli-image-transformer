@@ -9,20 +9,17 @@ I hate having to create a bunch of identical images for use as icons and favicon
 
 It is built using EmberJS and takes advantage of the awesome [Sharp](https://github.com/lovell/sharp) library to do the heavy lifting.
 
-
 ## Compatibility
 
 * Ember.js v4.8 or above
 * Ember CLI v4.8 or above
 * Node.js v18 or above
 
-
 ## Installation
 
 ```bash
 ember install ember-cli-image-transformer
 ```
-
 
 ## Usage
 
@@ -54,7 +51,6 @@ module.exports = function(defaults) {
 ```
 
 All generated images will be placed into the `public/assets` path of your application.
-
 
 ### Usage with custom quality
 
@@ -94,7 +90,6 @@ images: [
 ## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
-
 
 ## License
 
