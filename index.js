@@ -32,7 +32,6 @@ module.exports = {
       this.checkProperty('outputFileName', obj);
       this.checkProperty('convertTo', obj);
       this.checkProperty('sizes', obj);
-      this.checkProperty('quality', obj);
       const inputPath = path.join(this.app.project.root, obj.inputFilename);
 
       const pathData = path.parse(inputPath);
