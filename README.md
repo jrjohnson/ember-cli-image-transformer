@@ -9,13 +9,11 @@ I hate having to create a bunch of identical images for use as icons and favicon
 
 It is built using EmberJS and takes advantage of the awesome [Sharp](https://github.com/lovell/sharp) library to do the heavy lifting.
 
-
 ## Compatibility
 
 * Ember.js v4.8 or above
 * Ember CLI v4.8 or above
 * Node.js v18 or above
-
 
 ## Installation
 
@@ -23,11 +21,10 @@ It is built using EmberJS and takes advantage of the awesome [Sharp](https://git
 ember install ember-cli-image-transformer
 ```
 
-
 ## Usage
 
-Create an `ember-cli-image-transformer` section in your `ember-cli-build.js` file with 
-an `images` array. Each element in the array represents a different set of images to 
+Create an `ember-cli-image-transformer` section in your `ember-cli-build.js` file with
+an `images` array. Each element in the array represents a different set of images to
 be generated.
 
 ```js
@@ -55,6 +52,21 @@ module.exports = function(defaults) {
 
 All generated images will be placed into the `public/assets` path of your application.
 
+### Usage with custom quality
+
+The Sharp library uses default quality values depending on the output format. If the file type [supports it](https://sharp.pixelplumbing.com/api-output/#toformat), you may pass an optional `quality: [number]` in your image object array:
+
+```js
+images: [
+  {
+    inputFilename: 'public/trapezoid.svg',
+    outputFileName: 'icon-trapezoid',
+    convertTo: 'png',
+    sizes: [32, 48, 192],
+    quality: 50,
+  }
+]
+```
 
 ### Usage in a template
 
@@ -73,11 +85,11 @@ All generated images will be placed into the `public/assets` path of your applic
 |`sizes`| :heavy_check_mark: | none |  `[92, 150]` | An array of image sizes to produce |
 |`destination`| | `assets/icons` |  `images/wherever/you/want` | The destination directory for the output images relative to `/public` |
 |`background`|  | none |  `{r: 255, g: 255, b: 255, alpha: 0}` | Add a background color to the image. |
+|`quality`|  | varies by format |  `25` | The quality (out of 100) of the image processing. |
 
 ## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
-
 
 ## License
 

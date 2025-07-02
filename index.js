@@ -39,6 +39,7 @@ module.exports = {
         include: [pathData.base],
       });
       let options = {
+        quality: obj.quality,
         sizes: obj.sizes,
         inputFilename: pathData.base,
         outputFileName: obj.outputFileName,
