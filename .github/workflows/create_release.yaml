@@ -3,7 +3,7 @@ name: Release Notes
 on:
   push:
     tags:
-    - '*'
+      - "*"
 
 jobs:
   notes:
@@ -12,26 +12,8 @@ jobs:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    - name: Get Previous Tag
-      run: |
-        PREVIOUS_TAG=$(git describe --abbrev=0 --tags $(git rev-list --tags --skip=1 --max-count=1))
-        echo ${PREVIOUS_TAG}
-        echo "previous_tag=${PREVIOUS_TAG}" >> $GITHUB_ENV
-    - name: Get New Tag
-      run: |
-        NEW_TAG=${GITHUB_REF#refs/tags/}
-        echo ${NEW_TAG}
-        echo "new_tag=${NEW_TAG}" >> $GITHUB_ENV
     - uses: actions/setup-node@v4
-    - name: Generate Release Notes
-      id: notes
-      run: |
-        NOTES=$(npx generate-github-release-notes jrjohnson ember-cli-image-transformer ${{ env.previous_tag }} ${{env.new_tag}})
-        echo ${NOTES}
-        # remove line breaks from notes so they can be passed around
-        NOTES="${NOTES//$'\n'/'%0A'}"
-        echo "release_notes=${NOTES}" >> $GITHUB_ENV
     - uses: ncipollo/release-action@v1
       with:
-        body: ${{env.release_notes}}
         token: ${{ secrets.MY_TOKEN }}
+        generateReleaseNotes: true
