@@ -35,11 +35,11 @@
   "dependencies": {
     "@babel/core": "^7.25.2",
     "broccoli-caching-writer": "^3.0.3",
-    "broccoli-funnel": "^3.0.2",
-    "broccoli-merge-trees": "^4.1.0",
+    "broccoli-funnel": "^3.0.8",
+    "broccoli-merge-trees": "^4.2.0",
     "ember-cli-babel": "^8.2.0",
     "ember-cli-htmlbars": "^6.3.0",
-    "sharp": "^0.33.0"
+    "sharp": "^0.34.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.25.1",
@@ -49,7 +49,7 @@
     "@embroider/test-setup": "^4.0.0",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
-    "@percy/cli": "^1.0.0-beta.70",
+    "@percy/cli": "^1.31.0",
     "@percy/ember": "^4.2.0",
     "broccoli-asset-rev": "^3.0.0",
     "concurrently": "^8.2.2",
@@ -98,6 +98,15 @@
     "configPath": "tests/dummy/config"
   },
   "packageManager": "pnpm@10.12.4",
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "@percy/core",
+      "core-js"
+    ],
+    "onlyBuiltDependencies": [
+      "sharp"
+    ]
+  },
   "files": [
     "index.js",
     "ember-cli-build.js",
