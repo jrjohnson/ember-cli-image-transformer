@@ -4,8 +4,14 @@ on:
   workflow_dispatch:
     inputs:
       releaseType:
-        description: 'Semver Release Type (major,minor,patch)'
+        description: "Semver Release Type (major,minor,patch)"
         required: true
+        default: "patch"
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
 
 jobs:
   tag:
@@ -14,13 +20,13 @@ jobs:
     - uses: actions/checkout@v4
       with:
           token: ${{ secrets.MY_TOKEN }}
+    - uses: pnpm/action-setup@v4
     - name: Validate releaseType
-      run: npx in-string-list ${{ github.event.inputs.releaseType }} major,minor,patch
+      run: pnpx in-string-list ${{ github.event.inputs.releaseType }} major,minor,patch
     - name: Setup Git
       run: |
         git config --global user.name "Jonathan Johnson"
         git config --global user.email "jon.johnson@ucsf.edu"
-    - uses: pnpm/action-setup@v4
     - name: Increment Version
       run: pnpm version ${{ github.event.inputs.releaseType }}
     - name: Push Changes
