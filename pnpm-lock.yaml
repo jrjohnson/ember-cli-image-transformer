@@ -53,7 +53,7 @@ importers:
         version: 1.1.2
       '@percy/cli':
         specifier: ^1.31.0
-        version: 1.31.0
+        version: 1.31.1
       '@percy/ember':
         specifier: ^4.2.0
         version: 4.2.0
@@ -116,7 +116,7 @@ importers:
         version: 9.1.2(eslint@8.57.1)
       eslint-plugin-ember:
         specifier: ^12.2.1
-        version: 12.6.0(@babel/core@7.28.0)(eslint@8.57.1)
+        version: 12.7.0(@babel/core@7.28.0)(eslint@8.57.1)
       eslint-plugin-n:
         specifier: ^16.6.2
         version: 16.6.2(eslint@8.57.1)
@@ -263,8 +263,8 @@ packages:
     resolution: {integrity: sha512-NFJK2sHUvrjo8wAU/nQTWU890/zB2jj0qBcCbZbbf+005cAsv6tMjXz31fBign6M5ov1o0Bllu+9nbqkfsjjJQ==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/helpers@7.27.6':
-    resolution: {integrity: sha512-muE8Tt8M22638HU31A3CgfSUciwz1fhATfoVai05aPXGor//CdWDCbnlY1yvBPo07njuVOCNGCSp/GTt12lIug==}
+  '@babel/helpers@7.28.2':
+    resolution: {integrity: sha512-/V9771t+EgXz62aCcyofnQhGM8DQACbRhvzKFsXKC9QM+5MadF8ZmIm0crDMaz3+o0h0zXfJnd4EhbYbxsrcFw==}
     engines: {node: '>=6.9.0'}
 
   '@babel/parser@7.28.0':
@@ -717,8 +717,8 @@ packages:
   '@babel/runtime@7.12.18':
     resolution: {integrity: sha512-BogPQ7ciE6SYAUPtlm9tWbgI9+2AgqSam6QivMgXgAT+fKbgppaj4ZX15MHeLC1PVF5sNk70huBu20XxWOs8Cg==}
 
-  '@babel/runtime@7.27.6':
-    resolution: {integrity: sha512-vbavdySgbTTrmFE+EsiqUTzlOr5bzlnJtUv9PynGCAKvfQqjIXbvFdumPM/GxMDfyuGMJaJAU6TO4zc1Jf1i8Q==}
+  '@babel/runtime@7.28.2':
+    resolution: {integrity: sha512-KHp2IflsnGywDjBWDkR9iEqiWSpc8GIi0lgTT3mOElT0PP1tG26P4tmFI2YvAdzgq9RGyoHZQEIEdZy6Ec5xCA==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.27.2':
@@ -729,8 +729,8 @@ packages:
     resolution: {integrity: sha512-mGe7UK5wWyh0bKRfupsUchrQGqvDbZDbKJw+kcRGSmdHVYrv+ltd0pnpDTVpiTqnaBru9iEvA8pz8W46v0Amwg==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/types@7.28.1':
-    resolution: {integrity: sha512-x0LvFTekgSX+83TI28Y9wYPUfzrnl2aT5+5QLnO6v7mSJYtEEevuDRN0F0uSHRk1G1IWZC43o00Y0xDDrpBGPQ==}
+  '@babel/types@7.28.2':
+    resolution: {integrity: sha512-ruv7Ae4J5dUYULmeXw1gmb7rYRz57OWCPM57pHojnLq/3Z1CK2lNSLTCVjxVk1F/TZHwOZZrOWi0ur95BbLxNQ==}
     engines: {node: '>=6.9.0'}
 
   '@cnakazawa/watch@1.0.4':
@@ -789,8 +789,8 @@ packages:
     resolution: {integrity: sha512-gcJuHiXgnrzaU8NyU+2bMbtS6PNOr5v5B8OXBqaBvTCsMpXLvKo8OBOQFCoUN0rPX2J6VaFqrbi/371sMvzZug==}
     engines: {node: 12.* || 14.* || >= 16}
 
-  '@embroider/macros@1.18.0':
-    resolution: {integrity: sha512-KanP80XxNK4bmQ1HKTcUjy/cdCt9n7knPMLK1vzHdOFymACHo+GbhgUjXjYdOCuBTv+ZwcjL2P2XDmBcYS9r8g==}
+  '@embroider/macros@1.18.1':
+    resolution: {integrity: sha512-hOQyzFBT1Rd6RdY4AbRSSGSeXyUzUrU9o6GWGD/kxg7cggKQax4R486KE10ZVSPRNqhRiNUcqe2VWc/+e8Z0MQ==}
     engines: {node: 12.* || 14.* || >= 16}
     peerDependencies:
       '@glint/template': ^1.0.0
@@ -1088,8 +1088,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@inquirer/figures@1.0.12':
-    resolution: {integrity: sha512-MJttijd8rMFcKJC8NYmprWr6hD3r9Gd9qUC0XwPNwoEPWSMVJwA2MlXxF+nhZZNMY+HXsWa+o7KY2emWYIn0jQ==}
+  '@inquirer/figures@1.0.13':
+    resolution: {integrity: sha512-lGPVU3yO9ZNqA7vTYz26jny41lE7yoQansmqdMLBEfqaGsmdg7V3W9mK9Pvb5IL4EVZ9GnSDGMO/cJXud5dMaw==}
     engines: {node: '>=18'}
 
   '@jridgewell/gen-mapping@0.3.12':
@@ -1127,77 +1127,77 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@percy/cli-app@1.31.0':
-    resolution: {integrity: sha512-NU4zSDNXbwL/AG58eFT5YPd8McZSY2vTV1MEnKNTixiSAM+KXX5oZ4ehrRV3bod+jIOsgl3x7WZJOwW9n+T1mQ==}
+  '@percy/cli-app@1.31.1':
+    resolution: {integrity: sha512-Z/15B6SmorHNTZWtVkxFYKpW9v5Guz+gOWV3tgzW7c062JpiXdQOhhFoH30e8hUP1bK3NCHLnD4Vt++SE9ORZQ==}
     engines: {node: '>=14'}
 
-  '@percy/cli-build@1.31.0':
-    resolution: {integrity: sha512-p+ml01nFlcHayQwNHrwC+DALUuSmz4I8839AoTAgnxqswEHwqPK9VR0Dtk1h+u8buviZ1meCtSETZLxClOYC5w==}
+  '@percy/cli-build@1.31.1':
+    resolution: {integrity: sha512-by0HU5WOO8gfRsYs8d7ARinX50/9F9k4goBP7S1rMVJYVh3VBqngjZaMQ+fizuDlHoSL/hUPpMZEJgAPFtczQg==}
     engines: {node: '>=14'}
 
-  '@percy/cli-command@1.31.0':
-    resolution: {integrity: sha512-6NfDQLFV/56bI0RwVqe9rWvJ5IXrln84ZIPwT5NPsMYlLsu90hiS1360KcYllBTziZQUpBDT/uIpGxl+mFO/gA==}
-    engines: {node: '>=14'}
-    hasBin: true
-
-  '@percy/cli-config@1.31.0':
-    resolution: {integrity: sha512-VjUvrlIvo46Vtdm7wfgOyLFHvY2QISUO8utQXfQZYXhPWN31laURKpQrSMkAkhpjlJ47/QNmRYvjjg5swRy7cw==}
-    engines: {node: '>=14'}
-
-  '@percy/cli-exec@1.31.0':
-    resolution: {integrity: sha512-GI8YRYTGwM1WnFHVlQap9Lw+w7PzgryTay61R4yD7HcZInotehaSoGgQMB4jqMBlLYqVABaqsA2ZHaOmLMaeVA==}
-    engines: {node: '>=14'}
-
-  '@percy/cli-snapshot@1.31.0':
-    resolution: {integrity: sha512-HNpNLgX9ZaYU6DUR9ekH5al8SJ+sVKG5kqvnR2k/61+aEzcCrTFDXY5sJcby69mRNVy5mdVRqLKmDxc+sHdI+Q==}
-    engines: {node: '>=14'}
-
-  '@percy/cli-upload@1.31.0':
-    resolution: {integrity: sha512-dTnE4i2T1IQeAPLMkiFjWqfuaC4p3U/gJTjCU5xFpVAGs8Sw4WECXc7kZ1pe6o4IYUuGoM7bdqnVyLaUHbxp8Q==}
-    engines: {node: '>=14'}
-
-  '@percy/cli@1.31.0':
-    resolution: {integrity: sha512-Ftztj3PLvdMnBylyXIsfEKbHsKRRMpKuk4pFi4MizCFrbM3O6D8raHmff6GaVkE95tMnkF+7gX0BlPzjnbzG8w==}
+  '@percy/cli-command@1.31.1':
+    resolution: {integrity: sha512-arVQ1/MtcKf+LvpbkoxtAI2X621PEVn5l8mQ82+MJk8DaV7UbebYw8JSoXyiZjWmLyRQCltG79mw8EUYrsoUNA==}
     engines: {node: '>=14'}
     hasBin: true
 
-  '@percy/client@1.31.0':
-    resolution: {integrity: sha512-ACC2zSLOr+c/huLXYFFTrcF2B0c9EIK4gWg1yacIHeaI8ulkX+34UHeCwkWjDM4tcN5cANQ0y+EQv+QuCcWcYA==}
+  '@percy/cli-config@1.31.1':
+    resolution: {integrity: sha512-1g0ZXmDQV5hAH4a8D9qFSQoppZcxwsGiUX51wzpgXYQqd4jWL8WzQEgfLaoXES4mNPPLSLHlTvMDNHmo+Z9lXg==}
     engines: {node: '>=14'}
 
-  '@percy/config@1.31.0':
-    resolution: {integrity: sha512-PPsITaULaxYLyraSEZs1x9VKDhWunh0JfX/LSKh48BFE1ABWOxIUrqWP9KmCV2XelNAiLEm2ErkCMeS0vjTBxg==}
+  '@percy/cli-exec@1.31.1':
+    resolution: {integrity: sha512-V+zQnkYHsxmD3EytAQsLOD6Xtim5HHRfARZW6xjgKWKHIQaLjRuI7/nJu/bBEgbX2dbcq7UWMfYKQ3QNhTCZjg==}
     engines: {node: '>=14'}
 
-  '@percy/core@1.31.0':
-    resolution: {integrity: sha512-7grj0KMnWeHAQkT7EGOIztEwnQJ2U0Ejvd+Agz0UoWYMXtPnn4QapSeVjqVAr7s7y4PtDVT9kwZ55Kzuq+hzTg==}
+  '@percy/cli-snapshot@1.31.1':
+    resolution: {integrity: sha512-iIVShWZ17fd+ae6mEv6mDb1oIrW/VSn5LPnbtUW17IT1ZKWFfKydbOyA9sXsjkfcouKI6Wl2OCQcoZnEsu/6pQ==}
     engines: {node: '>=14'}
 
-  '@percy/dom@1.31.0':
-    resolution: {integrity: sha512-eEzzYQGVTZoq0ENrDX9Ih1G3JSYaqLpci++bb1J9kgulkSLXVi0JE8cKftcajo/8QrTrSs9OQCJa2+M1X2te8Q==}
+  '@percy/cli-upload@1.31.1':
+    resolution: {integrity: sha512-/A7JB/TxIh5hG/8yJ6xCgBBFGanoi8JLDt7s9YukMRGj6s5HqgS6CPgd09HC//oJfKXtJVwuqZ4rkjr7g8g13g==}
+    engines: {node: '>=14'}
+
+  '@percy/cli@1.31.1':
+    resolution: {integrity: sha512-o2O+yExTnA+FLCy5EWjsyms+dNZPBmIECjgByyE4/a8Kf9cYWGnImHwseDgN+xijyRvkn3BgsuLL+Bw7Y4Dv+Q==}
+    engines: {node: '>=14'}
+    hasBin: true
+
+  '@percy/client@1.31.1':
+    resolution: {integrity: sha512-EO4IM/Ldz3qGZFrd8X99ntS2FY/MlFKWhad2p3cW7fOFvex41oZH2c0fdpJBCD+ehiLmFAVJTnNMqMnuhVS81Q==}
+    engines: {node: '>=14'}
+
+  '@percy/config@1.31.1':
+    resolution: {integrity: sha512-PPxtvUHrVOnOFdHgajRyFKuJYKOM05t+jqntTXDMzUod7WRQzR9xdMexC9mzDx+r1+3hl/h6Z3eHuDQMXEZCXw==}
+    engines: {node: '>=14'}
+
+  '@percy/core@1.31.1':
+    resolution: {integrity: sha512-ZFxiN5ANTphaqcsZ8p0x57lsQuWQyaIh5PrtbuZAeBSybq9AuOz9eC9k/Cr+CMsSFYE/92i5O8MK5KsSfreXYQ==}
+    engines: {node: '>=14'}
+
+  '@percy/dom@1.31.1':
+    resolution: {integrity: sha512-JZ3m0/9+SPlKSNdBJXEs3uaIioXnJjvFRBN6cD9Fu+M0yl0mzNNNU+hmXSeNiUq9rvBEpbkkfehPJVKuRy2QPQ==}
 
   '@percy/ember@4.2.0':
     resolution: {integrity: sha512-D/WckDD2tQetdn8uq46nQA1rOVgov8jsZG4uN7snAq6SrOpxNxacONg37QPwczmICBc7o/NlipCAUteukmtKzg==}
     engines: {node: '>= 14'}
 
-  '@percy/env@1.31.0':
-    resolution: {integrity: sha512-KRKYhDLlMwyLvKQNw1bx8XeXArLig6WyuCTIdwQkLwh4fZllEmSqPDnCUSk0Cu5rpcq0ItVOcZ4vy0R3KcmLBA==}
+  '@percy/env@1.31.1':
+    resolution: {integrity: sha512-2Df042p8p0j6DwtYAUQ9nRCXFkpk/JJUvd8xV/S1bmvcD9LTmOzGfEu8kcA8ndDaeMcJJM2b12PNFxjVCEsmog==}
     engines: {node: '>=14'}
 
-  '@percy/logger@1.31.0':
-    resolution: {integrity: sha512-OZHybJzTFFeG44uh02SXHCVbMpyE4KnGHr2rFG1T6/RLfmy0WPBOYz2yvCKDPKjuTkYBd4zBacTgokK0onAoJw==}
+  '@percy/logger@1.31.1':
+    resolution: {integrity: sha512-2QzrW/9Mi0tEQWl+1keCYWRwRocZNaRdmfvhl4VSyYi6fD6zhMSD5oXZroIsxXNRIKfanm4vuKZZqhhlApdPmw==}
     engines: {node: '>=14'}
 
-  '@percy/monitoring@1.31.0':
-    resolution: {integrity: sha512-myysetAc2Kz0LsLy1JGHHB7DCsiodeW1u/b71M7kiwWYBWw840hiBEgoUDvJkgJ2Tig3oLoyI4aTqyvTExNu+A==}
+  '@percy/monitoring@1.31.1':
+    resolution: {integrity: sha512-oxu6pTwBdyJPF8KPPK8BBHCQmRS3DUy5zOTu9AWwl4wFVqGTeKLrKu5g+5Ig0Ja29k8FXCl/Ugfc4k27AiZKzQ==}
     engines: {node: '>=14'}
 
-  '@percy/sdk-utils@1.31.0':
-    resolution: {integrity: sha512-hlzEq75BmQUwzu9oOVNWCRmT8l1PZ/KTDdBF01swArevffOV4cF4QtOQAA+jpDT4SIur66X9AmciLnMLmLzYkA==}
+  '@percy/sdk-utils@1.31.1':
+    resolution: {integrity: sha512-OU+n/TGEPt7ZikJOwau9S0X0bCfKNTxHIry9dX57amL82PysCrzEfcKUJIAf1BTaVqDH4In8GPssjLVhut95Ag==}
     engines: {node: '>=14'}
 
-  '@percy/webdriver-utils@1.31.0':
-    resolution: {integrity: sha512-e7k/rpkd9mhZWbUdgMU9wSj5exWWAmSLnVVLPPXn//SujSvt0koDkvCkXNMbE3aOSNC7yB48w3LE4hh0TK5slQ==}
+  '@percy/webdriver-utils@1.31.1':
+    resolution: {integrity: sha512-oaBL9D+QsP5ftxNW4ZJtlPF2KwCc4Wo0SRaLILqZxehG5IRXKAi0ggH7i4Shmv1Wt/QuYF6MJsdnluJb+s5+Eg==}
     engines: {node: '>=14'}
 
   '@pkgr/core@0.2.9':
@@ -1308,8 +1308,8 @@ packages:
   '@types/minimist@1.2.5':
     resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
 
-  '@types/node@24.0.15':
-    resolution: {integrity: sha512-oaeTSbCef7U/z7rDeJA138xpG3NuKc64/rZ2qmUFkFJmnMsAPaluIifqyWd8hSSMxyP9oie3dLAqYPblag9KgA==}
+  '@types/node@24.1.0':
+    resolution: {integrity: sha512-ut5FthK5moxFKH2T1CUOC6ctR67rQRvvHdFLCD2Ql6KXmMuCrjsSsRI9UsLCm9M18BMwClv4pn327UvB7eeO1w==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2620,8 +2620,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.5.187:
-    resolution: {integrity: sha512-cl5Jc9I0KGUoOoSbxvTywTa40uspGJt/BDBoDLoxJRSBpWh4FFXBsjNRHfQrONsV/OoEjDfHUmZQa2d6Ze4YgA==}
+  electron-to-chromium@1.5.191:
+    resolution: {integrity: sha512-xcwe9ELcuxYLUFqZZxL19Z6HVKcvNkIwhbHUz7L3us6u12yR+7uY89dSl570f/IqNthx8dAw3tojG7i4Ni4tDA==}
 
   ember-auto-import@2.10.0:
     resolution: {integrity: sha512-bcBFDYVTFHyqyq8BNvsj6UO3pE6Uqou/cNmee0WaqBgZ+1nQqFz0UE26usrtnFAT+YaFZSkqF2H36QW84k0/cg==}
@@ -2726,8 +2726,8 @@ packages:
     resolution: {integrity: sha512-BtkjulweiXo9c3yVWrtexw2dTmBrvavD/xixNC6TKOBdrixUwU+6nuOO9dufDWsMxoid7MvtmDpzc9+mE8PdaA==}
     engines: {node: 10.* || >= 12.*}
 
-  ember-eslint-parser@0.5.9:
-    resolution: {integrity: sha512-IW4/3cEiFp49M2LiKyzi7VcT1egogOe8UxQ9eUKTooenC7Q4qNhzTD6rOZ8j51m8iJC+8hCzjbNCa3K4CN0Hhg==}
+  ember-eslint-parser@0.5.10:
+    resolution: {integrity: sha512-QOmqeY53LIMc3/FgMnvt/KY/JhtyOZchda+VLJe994muhsS76EQ1lJaqv6lntq9Pc2R8coqiBKVfqlD0DeqnGg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@babel/core': ^7.23.6
@@ -2914,8 +2914,8 @@ packages:
   eslint-formatter-kakoune@1.0.0:
     resolution: {integrity: sha512-Uk/TVLt6Nf6Xoz7C1iYuZjOSdJxe5aaauGRke8JhKeJwD66Y61/pY2FjtLP04Ooq9PwV34bzrkKkU2UZ5FtDRA==}
 
-  eslint-plugin-ember@12.6.0:
-    resolution: {integrity: sha512-axb6l5iUwW08mjSWDY+/aVUG4PS7kJTM+gXOSP1ev9aVy5bphaVJ3yFCSd81BPvqiD8IkCa+K9R6pwhsfLtnfA==}
+  eslint-plugin-ember@12.7.0:
+    resolution: {integrity: sha512-QkKzUzmWjSjscJLNYlkPv1ug5B5/Ec/7/MEEjDZxthzHO9VhnyMZ0shwvCztLTvB5D7LO67E7Zmpwb4YyBoFMA==}
     engines: {node: 18.* || 20.* || >= 21}
     peerDependencies:
       '@typescript-eslint/parser': '*'
@@ -6138,11 +6138,11 @@ snapshots:
       '@babel/generator': 7.28.0
       '@babel/helper-compilation-targets': 7.27.2
       '@babel/helper-module-transforms': 7.27.3(@babel/core@7.28.0)
-      '@babel/helpers': 7.27.6
+      '@babel/helpers': 7.28.2
       '@babel/parser': 7.28.0
       '@babel/template': 7.27.2
       '@babel/traverse': 7.28.0
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
       convert-source-map: 2.0.0
       debug: 4.4.1
       gensync: 1.0.0-beta.2
@@ -6162,14 +6162,14 @@ snapshots:
   '@babel/generator@7.28.0':
     dependencies:
       '@babel/parser': 7.28.0
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
       '@jridgewell/gen-mapping': 0.3.12
       '@jridgewell/trace-mapping': 0.3.29
       jsesc: 3.1.0
 
   '@babel/helper-annotate-as-pure@7.27.3':
     dependencies:
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
 
   '@babel/helper-compilation-targets@7.27.2':
     dependencies:
@@ -6215,14 +6215,14 @@ snapshots:
   '@babel/helper-member-expression-to-functions@7.27.1':
     dependencies:
       '@babel/traverse': 7.28.0
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
     transitivePeerDependencies:
       - supports-color
 
   '@babel/helper-module-imports@7.27.1':
     dependencies:
       '@babel/traverse': 7.28.0
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
     transitivePeerDependencies:
       - supports-color
 
@@ -6237,7 +6237,7 @@ snapshots:
 
   '@babel/helper-optimise-call-expression@7.27.1':
     dependencies:
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
 
   '@babel/helper-plugin-utils@7.27.1': {}
 
@@ -6262,7 +6262,7 @@ snapshots:
   '@babel/helper-skip-transparent-expression-wrappers@7.27.1':
     dependencies:
       '@babel/traverse': 7.28.0
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
     transitivePeerDependencies:
       - supports-color
 
@@ -6276,18 +6276,18 @@ snapshots:
     dependencies:
       '@babel/template': 7.27.2
       '@babel/traverse': 7.28.0
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/helpers@7.27.6':
+  '@babel/helpers@7.28.2':
     dependencies:
       '@babel/template': 7.27.2
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
 
   '@babel/parser@7.28.0':
     dependencies:
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
 
   '@babel/plugin-bugfix-firefox-class-in-computed-class-key@7.27.1(@babel/core@7.28.0)':
     dependencies:
@@ -6850,20 +6850,20 @@ snapshots:
     dependencies:
       '@babel/core': 7.28.0
       '@babel/helper-plugin-utils': 7.27.1
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
       esutils: 2.0.3
 
   '@babel/runtime@7.12.18':
     dependencies:
       regenerator-runtime: 0.13.11
 
-  '@babel/runtime@7.27.6': {}
+  '@babel/runtime@7.28.2': {}
 
   '@babel/template@7.27.2':
     dependencies:
       '@babel/code-frame': 7.27.1
       '@babel/parser': 7.28.0
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
 
   '@babel/traverse@7.28.0':
     dependencies:
@@ -6872,12 +6872,12 @@ snapshots:
       '@babel/helper-globals': 7.28.0
       '@babel/parser': 7.28.0
       '@babel/template': 7.27.2
-      '@babel/types': 7.28.1
+      '@babel/types': 7.28.2
       debug: 4.4.1
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/types@7.28.1':
+  '@babel/types@7.28.2':
     dependencies:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
@@ -6923,7 +6923,7 @@ snapshots:
   '@ember/test-helpers@3.3.1(@babel/core@7.28.0)(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.100.2))(webpack@5.100.2)':
     dependencies:
       '@ember/test-waiters': 3.1.0
-      '@embroider/macros': 1.18.0
+      '@embroider/macros': 1.18.1
       '@simple-dom/interface': 1.4.0
       broccoli-debug: 0.6.5
       broccoli-funnel: 3.0.8
@@ -6956,7 +6956,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@embroider/macros@1.18.0':
+  '@embroider/macros@1.18.1':
     dependencies:
       '@embroider/shared-internals': 3.0.0
       assert-never: 1.4.0
@@ -7363,7 +7363,7 @@ snapshots:
   '@img/sharp-win32-x64@0.34.3':
     optional: true
 
-  '@inquirer/figures@1.0.12': {}
+  '@inquirer/figures@1.0.13': {}
 
   '@jridgewell/gen-mapping@0.3.12':
     dependencies:
@@ -7410,49 +7410,49 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@percy/cli-app@1.31.0':
+  '@percy/cli-app@1.31.1':
     dependencies:
-      '@percy/cli-command': 1.31.0
-      '@percy/cli-exec': 1.31.0
+      '@percy/cli-command': 1.31.1
+      '@percy/cli-exec': 1.31.1
     transitivePeerDependencies:
       - bufferutil
       - supports-color
       - typescript
       - utf-8-validate
 
-  '@percy/cli-build@1.31.0':
+  '@percy/cli-build@1.31.1':
     dependencies:
-      '@percy/cli-command': 1.31.0
+      '@percy/cli-command': 1.31.1
     transitivePeerDependencies:
       - bufferutil
       - supports-color
       - typescript
       - utf-8-validate
 
-  '@percy/cli-command@1.31.0':
+  '@percy/cli-command@1.31.1':
     dependencies:
-      '@percy/config': 1.31.0
-      '@percy/core': 1.31.0
-      '@percy/logger': 1.31.0
+      '@percy/config': 1.31.1
+      '@percy/core': 1.31.1
+      '@percy/logger': 1.31.1
     transitivePeerDependencies:
       - bufferutil
       - supports-color
       - typescript
       - utf-8-validate
 
-  '@percy/cli-config@1.31.0':
+  '@percy/cli-config@1.31.1':
     dependencies:
-      '@percy/cli-command': 1.31.0
+      '@percy/cli-command': 1.31.1
     transitivePeerDependencies:
       - bufferutil
       - supports-color
       - typescript
       - utf-8-validate
 
-  '@percy/cli-exec@1.31.0':
+  '@percy/cli-exec@1.31.1':
     dependencies:
-      '@percy/cli-command': 1.31.0
-      '@percy/logger': 1.31.0
+      '@percy/cli-command': 1.31.1
+      '@percy/logger': 1.31.1
       cross-spawn: 7.0.6
       which: 2.0.2
     transitivePeerDependencies:
@@ -7461,9 +7461,9 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@percy/cli-snapshot@1.31.0':
+  '@percy/cli-snapshot@1.31.1':
     dependencies:
-      '@percy/cli-command': 1.31.0
+      '@percy/cli-command': 1.31.1
       yaml: 2.8.0
     transitivePeerDependencies:
       - bufferutil
@@ -7471,9 +7471,9 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@percy/cli-upload@1.31.0':
+  '@percy/cli-upload@1.31.1':
     dependencies:
-      '@percy/cli-command': 1.31.0
+      '@percy/cli-command': 1.31.1
       fast-glob: 3.3.3
       image-size: 1.2.1
     transitivePeerDependencies:
@@ -7482,49 +7482,49 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@percy/cli@1.31.0':
+  '@percy/cli@1.31.1':
     dependencies:
-      '@percy/cli-app': 1.31.0
-      '@percy/cli-build': 1.31.0
-      '@percy/cli-command': 1.31.0
-      '@percy/cli-config': 1.31.0
-      '@percy/cli-exec': 1.31.0
-      '@percy/cli-snapshot': 1.31.0
-      '@percy/cli-upload': 1.31.0
-      '@percy/client': 1.31.0
-      '@percy/logger': 1.31.0
+      '@percy/cli-app': 1.31.1
+      '@percy/cli-build': 1.31.1
+      '@percy/cli-command': 1.31.1
+      '@percy/cli-config': 1.31.1
+      '@percy/cli-exec': 1.31.1
+      '@percy/cli-snapshot': 1.31.1
+      '@percy/cli-upload': 1.31.1
+      '@percy/client': 1.31.1
+      '@percy/logger': 1.31.1
     transitivePeerDependencies:
       - bufferutil
       - supports-color
       - typescript
       - utf-8-validate
 
-  '@percy/client@1.31.0':
+  '@percy/client@1.31.1':
     dependencies:
-      '@percy/env': 1.31.0
-      '@percy/logger': 1.31.0
+      '@percy/env': 1.31.1
+      '@percy/logger': 1.31.1
       pac-proxy-agent: 7.2.0
       pako: 2.1.0
     transitivePeerDependencies:
       - supports-color
 
-  '@percy/config@1.31.0':
+  '@percy/config@1.31.1':
     dependencies:
-      '@percy/logger': 1.31.0
+      '@percy/logger': 1.31.1
       ajv: 8.17.1
       cosmiconfig: 8.3.6
       yaml: 2.8.0
     transitivePeerDependencies:
       - typescript
 
-  '@percy/core@1.31.0':
+  '@percy/core@1.31.1':
     dependencies:
-      '@percy/client': 1.31.0
-      '@percy/config': 1.31.0
-      '@percy/dom': 1.31.0
-      '@percy/logger': 1.31.0
-      '@percy/monitoring': 1.31.0
-      '@percy/webdriver-utils': 1.31.0
+      '@percy/client': 1.31.1
+      '@percy/config': 1.31.1
+      '@percy/dom': 1.31.1
+      '@percy/logger': 1.31.1
+      '@percy/monitoring': 1.31.1
+      '@percy/webdriver-utils': 1.31.1
       content-disposition: 0.5.4
       cross-spawn: 7.0.6
       extract-zip: 2.0.1
@@ -7542,36 +7542,36 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@percy/dom@1.31.0': {}
+  '@percy/dom@1.31.1': {}
 
   '@percy/ember@4.2.0':
     dependencies:
-      '@percy/sdk-utils': 1.31.0
+      '@percy/sdk-utils': 1.31.1
       ember-cli-babel: 7.26.11
     transitivePeerDependencies:
       - supports-color
 
-  '@percy/env@1.31.0':
+  '@percy/env@1.31.1':
     dependencies:
-      '@percy/logger': 1.31.0
+      '@percy/logger': 1.31.1
 
-  '@percy/logger@1.31.0': {}
+  '@percy/logger@1.31.1': {}
 
-  '@percy/monitoring@1.31.0':
+  '@percy/monitoring@1.31.1':
     dependencies:
-      '@percy/config': 1.31.0
-      '@percy/logger': 1.31.0
-      '@percy/sdk-utils': 1.31.0
+      '@percy/config': 1.31.1
+      '@percy/logger': 1.31.1
+      '@percy/sdk-utils': 1.31.1
       systeminformation: 5.27.7
     transitivePeerDependencies:
       - typescript
 
-  '@percy/sdk-utils@1.31.0': {}
+  '@percy/sdk-utils@1.31.1': {}
 
-  '@percy/webdriver-utils@1.31.0':
+  '@percy/webdriver-utils@1.31.1':
     dependencies:
-      '@percy/config': 1.31.0
-      '@percy/sdk-utils': 1.31.0
+      '@percy/config': 1.31.1
+      '@percy/sdk-utils': 1.31.1
     transitivePeerDependencies:
       - typescript
 
@@ -7609,7 +7609,7 @@ snapshots:
   '@types/body-parser@1.19.6':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
 
   '@types/chai-as-promised@7.1.8':
     dependencies:
@@ -7619,11 +7619,11 @@ snapshots:
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
 
   '@types/cors@2.8.19':
     dependencies:
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
 
   '@types/eslint-scope@3.7.7':
     dependencies:
@@ -7644,7 +7644,7 @@ snapshots:
 
   '@types/express-serve-static-core@4.19.6':
     dependencies:
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
       '@types/qs': 6.14.0
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.5
@@ -7658,16 +7658,16 @@ snapshots:
 
   '@types/fs-extra@5.1.0':
     dependencies:
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
 
   '@types/fs-extra@8.1.5':
     dependencies:
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
 
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 6.0.0
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
 
   '@types/glob@9.0.0':
     dependencies:
@@ -7679,7 +7679,7 @@ snapshots:
 
   '@types/keyv@3.1.4':
     dependencies:
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
 
   '@types/mime@1.3.5': {}
 
@@ -7691,7 +7691,7 @@ snapshots:
 
   '@types/minimist@1.2.5': {}
 
-  '@types/node@24.0.15':
+  '@types/node@24.1.0':
     dependencies:
       undici-types: 7.8.0
 
@@ -7703,29 +7703,29 @@ snapshots:
 
   '@types/responselike@1.0.3':
     dependencies:
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
 
   '@types/rimraf@2.0.5':
     dependencies:
       '@types/glob': 9.0.0
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
 
   '@types/send@0.17.5':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
 
   '@types/serve-static@1.15.8':
     dependencies:
       '@types/http-errors': 2.0.5
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
       '@types/send': 0.17.5
 
   '@types/symlink-or-copy@1.2.2': {}
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
     optional: true
 
   '@ungap/structured-clone@1.3.0': {}
@@ -8592,7 +8592,7 @@ snapshots:
   browserslist@4.25.1:
     dependencies:
       caniuse-lite: 1.0.30001727
-      electron-to-chromium: 1.5.187
+      electron-to-chromium: 1.5.191
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.25.1)
 
@@ -9000,7 +9000,7 @@ snapshots:
 
   date-fns@2.30.0:
     dependencies:
-      '@babel/runtime': 7.27.6
+      '@babel/runtime': 7.28.2
 
   date-fns@3.6.0: {}
 
@@ -9130,7 +9130,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.187: {}
+  electron-to-chromium@1.5.191: {}
 
   ember-auto-import@2.10.0(webpack@5.100.2):
     dependencies:
@@ -9140,7 +9140,7 @@ snapshots:
       '@babel/plugin-proposal-private-methods': 7.18.6(@babel/core@7.28.0)
       '@babel/plugin-transform-class-static-block': 7.27.1(@babel/core@7.28.0)
       '@babel/preset-env': 7.28.0(@babel/core@7.28.0)
-      '@embroider/macros': 1.18.0
+      '@embroider/macros': 1.18.1
       '@embroider/shared-internals': 2.9.1
       babel-loader: 8.4.1(@babel/core@7.28.0)(webpack@5.100.2)
       babel-plugin-ember-modules-api-polyfill: 3.5.0
@@ -9544,11 +9544,11 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  ember-eslint-parser@0.5.9(@babel/core@7.28.0)(eslint@8.57.1):
+  ember-eslint-parser@0.5.10(@babel/core@7.28.0)(eslint@8.57.1):
     dependencies:
       '@babel/core': 7.28.0
       '@babel/eslint-parser': 7.28.0(@babel/core@7.28.0)(eslint@8.57.1)
-      '@glimmer/syntax': 0.92.3
+      '@glimmer/syntax': 0.94.9
       content-tag: 2.0.3
       eslint-scope: 7.2.2
       html-tags: 3.3.1
@@ -9577,7 +9577,7 @@ snapshots:
     dependencies:
       '@ember/test-helpers': 3.3.1(@babel/core@7.28.0)(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.100.2))(webpack@5.100.2)
       '@embroider/addon-shim': 1.10.0
-      '@embroider/macros': 1.18.0
+      '@embroider/macros': 1.18.1
       ember-cli-test-loader: 3.1.0
       ember-source: 5.12.0(@glimmer/component@1.1.2(@babel/core@7.28.0))(rsvp@4.8.5)(webpack@5.100.2)
       qunit: 2.24.1
@@ -9757,7 +9757,7 @@ snapshots:
   engine.io@6.6.4:
     dependencies:
       '@types/cors': 2.8.19
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
       accepts: 1.3.8
       base64id: 2.0.0
       cookie: 0.7.2
@@ -9898,11 +9898,11 @@ snapshots:
 
   eslint-formatter-kakoune@1.0.0: {}
 
-  eslint-plugin-ember@12.6.0(@babel/core@7.28.0)(eslint@8.57.1):
+  eslint-plugin-ember@12.7.0(@babel/core@7.28.0)(eslint@8.57.1):
     dependencies:
       '@ember-data/rfc395-data': 0.0.4
       css-tree: 3.1.0
-      ember-eslint-parser: 0.5.9(@babel/core@7.28.0)(eslint@8.57.1)
+      ember-eslint-parser: 0.5.10(@babel/core@7.28.0)(eslint@8.57.1)
       ember-rfc176-data: 0.3.18
       eslint: 8.57.1
       eslint-utils: 3.0.0(eslint@8.57.1)
@@ -10954,7 +10954,7 @@ snapshots:
 
   inquirer@9.3.7:
     dependencies:
-      '@inquirer/figures': 1.0.12
+      '@inquirer/figures': 1.0.13
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
       external-editor: 3.1.0
@@ -11085,7 +11085,7 @@ snapshots:
 
   is-language-code@3.1.0:
     dependencies:
-      '@babel/runtime': 7.27.6
+      '@babel/runtime': 7.28.2
 
   is-map@2.0.3: {}
 
@@ -11207,7 +11207,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 24.0.15
+      '@types/node': 24.1.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
