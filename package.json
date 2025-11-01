@@ -97,7 +97,7 @@
   "ember-addon": {
     "configPath": "tests/dummy/config"
   },
-  "packageManager": "pnpm@10.19.0",
+  "packageManager": "pnpm@10.20.0",
   "pnpm": {
     "ignoredBuiltDependencies": [
       "@percy/core",
