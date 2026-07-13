@@ -35,7 +35,7 @@
   "dependencies": {
     "@babel/core": "^7.25.2",
     "broccoli-caching-writer": "^3.0.3",
-    "broccoli-funnel": "^3.0.8",
+    "broccoli-funnel": "^4.0.0",
     "broccoli-merge-trees": "^4.2.0",
     "ember-cli-babel": "^8.2.0",
     "ember-cli-htmlbars": "^6.3.0",
